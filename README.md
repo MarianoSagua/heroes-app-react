@@ -6,6 +6,7 @@ Tecnologias Utilizadas:
 
 Html
 Css
+Bootstrap
 Javascript
 React
 React Router Dom
