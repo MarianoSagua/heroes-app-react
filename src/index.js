@@ -3,12 +3,16 @@ import ReactDOM from "react-dom/client";
 import "./styles.css";
 import { HeroesApp } from "./HeroesApp";
 import { BrowserRouter } from "react-router-dom";
+import { AuthProvider } from "./auth";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
-  <BrowserRouter>
-    <HeroesApp />
-  </BrowserRouter>
+  <AuthProvider>
+    <BrowserRouter>
+      <HeroesApp />
+    </BrowserRouter>
+  </AuthProvider>
+
   // </React.StrictMode>
 );
